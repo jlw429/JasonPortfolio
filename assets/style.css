@@ -1,42 +1,61 @@
 body {
-    background-color: lightblue;
-    font-family: 'montserrat', sans-serif;
-    
+  background-color: lightblue;
+  font-family: 'montserrat', sans-serif;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 24px;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    padding: 5px 0;
-    color:white;
-    font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #footer-text {
-    font-size: 8px;
+  font-size: 8px;
 }
 
 a {
-    color:white;
+  color: white;
 }
 
 img {
-    border: royalblue;
+  border: royalblue;
 }
 
 .navtitle {
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .navhead {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* zach edits */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1 !important; /* keeps navbar over content when scrolling */
+}
+
+/* margin needed to push content below the fixed header */
+main {
+  margin: 70px 0;
+}
+
+/* instead of using the &nbsp for spacing */
+.footer-link {
+  padding-right: 8px;
 }
